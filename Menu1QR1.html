@@ -1,0 +1,1908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Scanners</title>
+
+
+    <!-- Box Icons install  -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Google Popin Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Princess+Sofia&family=Sofia&display=swap" rel="stylesheet">
+
+
+   
+    
+
+
+    <script>
+
+        // QR 
+
+        function togglepopup1(){
+    document.getElementById("popup-1").classList.toggle("active");
+}
+
+
+function togglepopup2(){
+    document.getElementById("popup-2").classList.toggle("active");
+}
+
+
+function togglepopup3(){
+    document.getElementById("popup-3").classList.toggle("active");
+}
+
+
+function togglepopup4(){
+    document.getElementById("popup-4").classList.toggle("active");
+}
+
+
+function togglepopup5(){
+    document.getElementById("popup-5").classList.toggle("active");
+}
+
+
+function togglepopup6(){
+    document.getElementById("popup-6").classList.toggle("active");
+}
+
+function togglepopup7(){
+    document.getElementById("popup-7").classList.toggle("active");
+}
+
+
+
+function togglepopup11(){
+    document.getElementById("popup-11").classList.toggle("active");
+}
+
+function togglepopup22(){
+    document.getElementById("popup-22").classList.toggle("active");
+}
+
+function togglepopup33(){
+    document.getElementById("popup-33").classList.toggle("active");
+}
+
+function togglepopup44(){
+    document.getElementById("popup-44").classList.toggle("active");
+}
+
+function togglepopup55(){
+    document.getElementById("popup-55").classList.toggle("active");
+}
+
+function togglepopup66(){
+    document.getElementById("popup-66").classList.toggle("active");
+}
+
+function togglepopup77(){
+    document.getElementById("popup-77").classList.toggle("active");
+}
+
+
+
+
+function togglepopup111(){
+    document.getElementById("popup-111").classList.toggle("active");
+}
+
+function togglepopup222(){
+    document.getElementById("popup-222").classList.toggle("active");
+}
+
+function togglepopup333(){
+    document.getElementById("popup-333").classList.toggle("active");
+}
+
+function togglepopup444(){
+    document.getElementById("popup-444").classList.toggle("active");
+}
+
+function togglepopup555(){
+    document.getElementById("popup-555").classList.toggle("active");
+}
+
+function togglepopup666(){
+    document.getElementById("popup-666").classList.toggle("active");
+}
+
+function togglepopup777(){
+    document.getElementById("popup-777").classList.toggle("active");
+}
+
+    </script>
+
+
+    <Style>
+
+        /* Portfolio  */
+
+
+
+
+
+
+
+ 
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style:none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+    /* user-select: none; */
+}
+
+:root{
+    --main-color: #ff9f0d;
+    --text-color: #fff;
+    --other-color: #212121;
+    --second-color: #9e9e9e;
+    --bg-color: #111;
+
+    --big-font: 4.5rem;
+    --h2-font: 2.6rem;
+    --p-font: 1.1rem;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(17, 17, 17, 0.952);
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 40px;
+    /* padding: 30px 14px; */
+    transition: all 0.50s ease;
+}
+.logo{
+    /* margin-left: 200px; */
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 33px;
+    font-weight: 700;
+}
+.logo i{
+    font-size: 100px;
+    vertical-align: middle;
+    margin-right: 8px;
+    color: var(--main-color);
+}
+
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+    margin:0 30px;
+    transition: all 0.5s ease;
+}
+.navlist a:hover{
+    color: var(--main-color);
+}
+.navlist a.active{
+    color: var(--main-color);
+}
+
+.nav-icons{
+    display: inline-block;
+    align-items: center;
+    padding: 8px 15px;
+    background: var(--main-color);
+    border-radius: 3rem;
+    box-shadow: #ff9f0d 0px 1px 25px;
+}
+.nav-icons i{
+    vertical-align: middle;
+    font-size: 25px;
+    color: var(--bg-color);
+    margin-right: 8px;
+    margin-left: 5px;
+    transition: all 0.5s ease;
+}
+#menu-icon{
+    font-size: 32px;
+    color: var(--bg-color);
+    z-index: 100;
+    cursor: pointer;
+
+    display: none;
+}
+.nav-icons i:hover{
+    color: var(--text-color);
+    transform: scale(1.1);
+}
+
+/* Home Section  */
+section {
+    padding: 70px 14% 60px;
+}
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+.home-img img{
+    width: 100%;
+    height: auto;
+    margin-left: 111px;
+}
+
+.home-text h1{
+    font-size: var(--big-font);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 3rem;
+}
+span{
+    color: var(--main-color);
+}
+.btn, .btn2{
+    display: inline-block;
+    padding: 15px 35px;
+    background: var(--other-color);
+    color: var(--main-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    
+    letter-spacing: 1px;
+    border-radius: 3rem;
+    transition: all 0.5s ease;
+}
+.btn2{margin-left: 10px;}
+.btn i{
+    vertical-align: middle;
+    margin-left: 2px;
+    font-size: 29px;
+}
+.btn:hover{
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: #ff9f0d 0px 1px 25px;
+}
+.btn2:hover{
+    background-color: #0dffc3e7;
+    color: var(--bg-color);
+    box-shadow: #0dff8e 0px 1px 25px;
+}
+
+/* .btn2{
+    display: inline-block;
+    margin-left: 30px;
+    font-size: var(--p-font);
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-bottom: 3px solid var(--main-color);
+    color: var(--main-color);
+    transition: all 0.5s ease;
+}
+
+.btn2:hover{
+    transform: scale(1.1) translateX(12px);
+} */
+
+/* Container Section  */
+header.sticky{
+    padding: 12px 14%;
+    background: var(--other-color);
+}
+
+.container{
+    padding: 30px 14% 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    text-align: center;
+}
+
+.container-box{
+    padding: 43px;
+    background: var(--other-color);
+    border-radius: 3rem;
+}
+
+.container-box img{
+    width: 100%;
+    max-width: 50px;
+    height: auto;
+}
+
+.container-box h3{
+    font-size: 21px;
+    font-weight: bold;
+    margin: 16px 0;
+}
+
+.container-box a{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    letter-spacing: 1px;
+    transition: all .4s ease;
+}
+
+.container-box a:hover{
+    color: var(--main-color);
+}
+
+
+.bdr{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.bdr .bdrr{
+    position: absolute;
+    display: block;
+}
+
+
+
+.bdr .bdrr:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--main-color));
+}
+.bdr:hover .bdrr:nth-child(1){
+    left: 100%;
+    transition: 0.6s;
+}
+
+
+
+
+.bdr .bdrr:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, var(--main-color));
+}
+.bdr:hover .bdrr:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.2s;
+}
+
+
+
+
+.bdr .bdrr:nth-child(2){
+    top: -100%;
+    right: 0;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(180deg, transparent, var(--main-color));
+}
+.bdr:hover .bdrr:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.05s;
+
+}
+
+
+
+ 
+.bdr .bdrr:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(360deg, transparent, var(--main-color));
+}
+.bdr:hover .bdrr:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.35s;
+
+}
+
+.bdr:hover{
+    /* border-color: 2px solid # ; */
+    box-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color), 0 0 30px var(--main-color);
+    transition-delay: 1s ;
+}
+
+
+
+
+
+/* About  */
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+}
+.about-img img{
+    width: 100%;
+    height: auto;
+}
+.about-text h2{
+    font-size: var(--h2-font);
+    line-height: 1.3;
+    margin-bottom: 2rem;
+}
+
+.about-text p{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 30px;
+    margin-bottom: 3rem;
+}
+
+.underline important {
+    border-bottom: 2px solid #ff9f0d; 
+    color: var(--h2-color); 
+    padding: 0 5px;
+}
+
+/* Our Shop  */
+.middle-text{
+    text-align: center;
+}
+
+.middle-text h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--main-color);
+}
+
+.middle-text h2{
+    font-size: var(--h2-font);
+}
+
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.row{
+    position: relative;
+    padding: 10px 35px 40px;
+    background: var(--other-color);
+    border-radius: 3rem;
+}
+
+.row img{
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.row h3{
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.row p{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 30px;
+    margin-bottom: 1.1rem;
+}
+
+.in-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.in-text .price h6{
+    font-size: 17px;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.in-text .s-btnn a{
+    display: inline-block;
+    padding: 9px 23px;
+    background:var(--bg-color);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 3rem;
+    transition: all .5s ease;
+}
+
+.in-text .s-btnn a:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: #ff9f0d 0px 1px 25px;
+}
+
+.top-icon{
+    position: absolute;
+    top: 30px;
+    left: 35px;
+}
+.top-icon i{
+    font-size: 22px;
+    color: var(--main-color);
+}
+
+
+.row-btn{
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.row img:hover{
+    transform: scale(1.1);
+}
+
+.review-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.box{
+    padding: 35px;
+    background: var(--other-color);
+    border-radius: 3rem;
+}
+
+.box p{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 30px;
+    margin-bottom: 1.5rem;
+}
+
+.in-box{
+    display:flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.bx-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 3rem;
+}
+
+.bxx-text h4{
+    margin: 5px 0;
+    font-size: 10px;
+}
+
+.bxx-text h5{
+    color: var(--second-color);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.ratings i{
+    color: var(--main-color);
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+/* Contact  */
+.contact-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.contact-text{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.contact-text h2{
+    font-size: var(--h2-font);
+    margin-bottom: 10px;
+}
+
+.contact-text p{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 30px;
+    max-width: 950px;
+    margin-bottom: 3rem;
+}
+
+.social i{
+    display: inline-block;
+    font-size: 32px;
+    color: var(--second-color);
+    margin: 0 20px;
+    transition: all 0.5s ease;
+}
+
+.social i:hover{
+    color: var(--main-color);
+}
+
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+}
+
+.main-d a{
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.main-d i{
+    vertical-align: middle;
+    margin-right: 12px;
+    font-size: 28px;
+    color: var(--main-color);
+}
+  /* Scroll Top  */
+  .scroll{
+    position: fixed;
+    bottom: 2.2rem;
+    border-top: 2rem;
+    right: 3.2rem;
+  }
+
+  .scroll i{
+    font-size: 22px;
+    color: var(--text-color);
+    background: var(--main-color);
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* QR  */
+    .popup .overlay112233{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            height: 100vh;
+            z-index: 1;
+            display: none;
+        }
+
+        .popup .content112233{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            background: #000000;
+            width: 450px;
+            height: 450px;
+            z-index: 2;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 20px;
+            border: 2px solid rgb(112, 107, 76);
+            box-shadow: 8px 10px 20px  rgb(160, 155, 155);
+        }
+
+        .home-img img {
+            width: 63%;
+            height: auto;
+            margin-left: 2px;
+        }
+        
+
+        .popup .close-btn{
+            position: absolute;
+            right: 20px;
+            left: 400px;
+            width: 30px;
+            height: 30px;
+            background: #000000;
+            color: #fff;
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .popup .close-btn:hover{
+            color: black;
+            background-color: white;
+        }
+
+
+
+        .popup.active .overlay112233{
+            display: block;
+        }
+
+        .popup.active .content112233{
+            transition: all 300ms ease-in-out;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+
+        
+.home-img img {
+    width: 63%;
+    height: auto;
+    margin-left: 2px;
+}
+
+        .Visit{
+            color: rgb(62, 59, 59); 
+            border-radius: 20px;
+            background: white; 
+            padding: 2px 20px;
+        }
+
+        .Visit:hover{
+            background: #FF9F0D;
+            color: white;
+        }
+
+
+
+        .bthover{
+            margin-top: 20px;
+            letter-spacing: 2px;
+        }
+
+       
+
+
+
+
+
+
+
+
+         *{
+         margin:0 ;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      body{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         min-height: 100vh;
+         background: #111111;
+      }
+      .menu{
+         position: relative;
+         width: 200px;
+         height: 200px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .menu li{
+         position: absolute;
+         list-style: none;
+         transform-origin: 100px;
+         left: 0;
+         top: 75px;
+         transition:  0.5s;
+         transition-delay: calc(0.1s * var(--i));
+         transform: rotate(0deg) translateX(80px);
+      }
+      
+      .menu.active li{
+         transform: rotate(calc(360deg / 8* var(--i)));
+         animation: ani 10s linear infinite;
+      }
+      @keyframes ani{
+         0%{rotate: 360deg;}
+          100%{rotate: 0deg;}
+      }
+
+      .menu li a{
+         color: gold;
+         font-size: 1.5em;
+        
+
+      }
+
+
+     
+      .toggle{
+         position: absolute;
+         width: 60px;
+         height: 60px;
+         background: #fff;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         z-index: 10000;
+         border-radius: 50%;
+         cursor: pointer;
+         font-size: 2em;
+         transition: transform  1.25s;
+      }
+
+      .menu.active .toggle{
+         transform: rotate(315deg);
+      }
+
+
+
+
+
+      /* 2nd  */
+
+      .menu1{
+         position: relative;
+         width: 200px;
+         height: 200px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .menu1 li{
+         position: absolute;
+         list-style: none;
+         transform-origin: 100px;
+         left: 0;
+         top: 75px;
+         transition:  0.5s;
+         transition-delay: calc(0.1s * var(--i));
+         transform: rotate(0deg) translateX(80px);
+      }
+      
+      .menu1.active1 li{
+         transform: rotate(calc(360deg / 8* var(--i)));
+         animation: ani1 10s linear infinite;
+      }
+      @keyframes ani1{
+         0%{rotate: 0deg;}
+          100%{rotate: 360deg;}
+      }
+
+      .menu1 li a{
+         color: gold;
+         font-size: 1.5em;
+        
+
+      }
+
+
+     
+      .toggle1{
+         position: absolute;
+         width: 60px;
+         height: 60px;
+         background: #fff;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         z-index: 10000;
+         border-radius: 50%;
+         cursor: pointer;
+         font-size: 2em;
+         transition: transform  1.25s;
+      }
+
+      .menu1.active1 .toggle1{
+         transform: rotate(315deg);
+      }
+
+
+      /* 3rd  */
+      .menu2{
+         position: relative;
+         width: 200px;
+         height: 200px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .menu2 li{
+         position: absolute;
+         list-style: none;
+         transform-origin: 100px;
+         left: 0;
+         top: 75px;
+         transition:  0.5s;
+         transition-delay: calc(0.1s * var(--i));
+         transform: rotate(0deg) translateX(80px);
+      }
+      
+      .menu2.active2 li{
+         transform: rotate(calc(360deg / 8* var(--i)));
+         animation: ani2 10s linear infinite;
+      }
+      @keyframes ani2{
+         0%{rotate: 360deg;}
+          100%{rotate: 0deg;}
+      }
+
+      .menu2 li a{
+         color: gold;
+         font-size: 1.5em;
+        
+
+      }
+
+
+     
+      .toggle2{
+         position: absolute;
+         width: 60px;
+         height: 60px;
+         background: #fff;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         z-index: 10000;
+         border-radius: 50%;
+         cursor: pointer;
+         font-size: 2em;
+         transition: transform  1.25s;
+      }
+
+      .menu2.active2 .toggle2{
+         transform: rotate(315deg);
+      }
+
+
+      .menu, .menu1, .menu2{
+         margin-right: 50px;
+      }
+
+
+     
+
+  
+  /* QR */
+   
+.qr-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+
+}
+
+.qr-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.qr-container:hover .qr-overlay {
+  opacity: 1;
+}
+
+.qr-overlay a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.qr-container:hover .qr-overlay a {
+  background-color: #0056b3;
+}
+
+/* .............. */
+.container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 100%);
+            /* border: 2px solid rgb(235, 235, 29); */
+            border-radius: 15px;
+        }
+       
+
+        .copy-text{
+            position: relative;
+            padding: 10px;
+            /* background: #e6e985; */
+            /* border: 1px solid rgb(235, 235, 29); */
+            border-radius: 10px;
+            display: flex;
+        }
+        input{
+            background-color:#b1b1ab2a ;
+            border: none;
+            border-radius: 15px;
+            margin-right: 10px;
+        }
+
+        .copy-text input.text{
+            padding: 10px;
+            font-size: 18px;
+            color: #ffffff90;
+            border: none;
+            outline: none;
+        }
+
+        .copy-text button{
+            padding: 10px;
+            background: #5784f5;
+            color: #fff;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .copy-text button:active{
+            background: #800ce2;
+        }
+
+        .copy-text button::before{
+            content: "Copied";
+            position: absolute;
+            top: -45px;
+            right: 0px;
+            background: #5c81dc;
+            padding: 8px 10px;
+            border-radius: 20px;
+            font-size: 15px;
+            display: none;
+        }
+        .copy-text button::after{
+            content: "";
+            position: absolute;
+            top: -20px;
+            right: 25px;
+            width: 10px;
+            height: 10px;
+            background: #5c81dc;
+            transform: rotate(45deg);
+            display: none;
+        }
+
+        .copy-text.active button::before,
+        .copy-text.active button::after{
+            display: block;
+        }
+
+        .QRHover:hover, .Visit:hover{
+             box-shadow: 0 0 30px #ff9f0d,
+                    2px 2px 10px #e0ddda;
+        }
+
+        #more, #more1, #more2 {display: none;}
+    </Style>
+
+   
+  
+</head>
+<body>
+
+
+    
+    <!-- Header  -->
+    <header>
+        <a href="#" class="logo"><i class='bx bx-collapse-horizontal bx-burst bx-rotate-180' ></i><img src="img/Anshulogo.png" alt="" style="opacity: 0.9;"></a>
+
+        <ul class="navlist">
+            <li style="user-select: none;"><a href="#home" class="active"><span style="font-size: 50px; color: rgba(255, 255, 255, 0.501);">Scan or Visit</span></a></li>
+            
+        </ul>
+
+        <div class="nav-icons">
+            <a href="https://www.youtube.com/c/codevillage" target="_blank"><i class='bx bxl-youtube bx-tada' ></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100015280038079" target="_blank"><i class='bx bxl-facebook bx-tada' ></i></a>
+            <a href="https://github.com/Code-Village07" target="_blank"><i class='bx bxl-github bx-tada' ></i></a>
+            <a href="https://twitter.com/iamnot07" target="_blank"><i class='bx bxl-twitter bx-tada' ></i></a>
+            <a href="mailto:anshuchaurasia210@gmail.com, webworld7815@gmail.com" target="_blank"><i class='bx bxl-gmail bx-tada' ></i></a>
+            <a href="https://www.instagram.com/_p_a_n_d_e_m_i_c_/" target="_blank"><i class='bx bxl-instagram bx-tada' ></i></a>
+            <a href="https://gitlab.com/anshu" target="_blank"><i class='bx bxl-gitlab bx-tada' ></i></a>
+            <a href="https://codepen.io/code-village07" target="_blank"><i class='bx bxl-codepen bx-tada' ></i></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+        <!-- Home Section  -->
+        <section class="home" id="home">
+            <div class="home-text">
+               
+                    
+
+
+                    <h1 style="user-select: none;">Scan the <br> <span> QR</span>
+                        <span class="cd-headline clip is-full-width" >
+                            <span class="cd-words-wrapper" style="color: white;">
+                                <b class="is-visible" >Code</b>
+                                 </span>
+                              </span> 
+                            </h1>
+                            
+
+                          
+
+                                   
+
+                        
+
+
+                     
+                <a href="index.html" class="btn"> Go Back<i class='bx bx-chevron-right bx-tada' ></i></a>
+                <a href="" class="btn2">Let's Chat</a>
+
+
+                <h3 style="user-select: none; margin-top: 10px; margin-left: 70px;"> Click <span> Direct</span>
+                    <span class="cd-headline clip is-full-width" >
+                        <span class="cd-words-wrapper" style="color: white;">
+                            <b class="is-visible" >Link</b>
+                             </span>
+                          </span> 
+                        </h3>
+                
+            </div>
+            
+
+            <div class="home-img" style="margin-top: -120px;">
+
+                <ul style="margin-top: 100px; margin-left: 200px;">
+
+
+<!-- ---------------------------------------------------------------------------------------------------  -->
+
+
+                    <!-- .....Scroll 1.....  -->
+                       <!-- E-Commerce  -->
+                    <h1 style="font-size: 50px;">E-Commerce 
+                    
+                        <button onclick="myFunction()" id="myBtn" style="background: transparent; color: white; border: none; "><ion-icon style="font-size: 30px;" name="chevron-down-outline"></ion-icon></button>
+                    </h1>
+                    <span id="dots"></span>
+                    <span id="more">
+                        <!-- ONE Anshu's Restaurant   -->
+                    <li>
+                        
+                        <span style="font: 30px bold; margin-right: 100px; line-height: 4rem;">Anshu's Restaurants : </span>
+                        <span style="color: white; margin-left: -50px; font-size: 20px;">
+                            <a href="https://anshu-portfolio-project.on.drv.tw/projects/anshu-Resturant/" target="_blank" class="Visit">
+                                Visit
+                                 <ion-icon name="Pizza-outline" style="rotate: 30deg;"></ion-icon>
+                            </a>  
+
+                            <span class="popup" id="popup-1">
+                                <div class="overlay112233"></div>
+                                <div class="content112233">
+                                    <div class="close-btn" onclick="togglepopup1()">&times;</div>
+                                    <h1>Anshu's Restaurants</h1>
+                                    <p>
+                                        <br>
+                                        <img src="QR-Codes/M1Q1AnshuRestaurant.png" alt="QR1">
+                                    </p>
+                                   
+                                    <p class="bthover">&#128522; Scan Me &#128522; </p>
+                                </div>
+                            </span>
+                        
+                            <button onclick="togglepopup1()" style="margin-left: 10px; border: none; color: #FF9F0D; background-color: transparent;">
+                                <ion-icon class="QRHover"  name="qr-code-outline" style="font-size: 30px; background: transparent; cursor: pointer;"></ion-icon>
+                            </button>
+
+
+
+                        </span>
+                    </li>
+                    <!-- TWO  Anshu's Gym  -->
+                    <li>
+                        <span style="font: 30px bold; margin-right: 100px; line-height: 4rem;">Anshu's Gym  :</span>
+                        <span style="color: white; margin-left: 37px; font-size: 20px;">
+                            <a href="https://anshu-portfolio-project.on.drv.tw/projects/anshu-GYM/" target="_blank" class="Visit">
+                                Visit
+                                 <ion-icon name="barbell-outline" style="rotate: 30deg;"></ion-icon>
+                            </a>  
+
+                            <span class="popup" id="popup-2">
+                                <div class="overlay112233"></div>
+                                <div class="content112233">
+                                    <div class="close-btn" onclick="togglepopup2()">&times;</div>
+                                    <h1>Anshu's Gym</h1>
+                                    <p>
+                                        <br>
+                                        <img src="QR-Codes/M1Q2AnshuGym.png" alt="QR2">
+                                    </p>
+                                    <p class="bthover">&#128522; Scan Me &#128522; </p>
+                                </div>
+                            </span>
+                        
+                            <button onclick="togglepopup2()" style="margin-left: 10px; border: none; color: #FF9F0D; background-color: transparent;">
+                                <ion-icon class="QRHover"  name="qr-code-outline" style="font-size: 30px; background: transparent; cursor: pointer;"></ion-icon>
+                            </button>
+                        </span>
+                    </li>
+                    <!-- THREE  Home Screen Lock   : Password -- 7815 -->
+                    <li>
+                        <span style="font: 30px bold; margin-right: 100px; line-height: 4rem;">Home Screen Lock :</span>
+                        <span style="color: white; margin-left: -33px; font-size: 20px;">
+                            <a href="https://anshu-portfolio-project.on.drv.tw/projects/AppMenuWithLock.html" target="_blank" class="Visit">
+                                Visit
+                                 <ion-icon name="phone-portrait-outline" style="rotate: 30deg;"></ion-icon>
+                            </a>  
+                            <span class="popup" id="popup-3">
+                                <div class="overlay112233"></div>
+                                <div class="content112233">
+                                    <div class="close-btn" onclick="togglepopup3()">&times;</div>
+                                    <h1>Home Screen Lock</h1>
+                                    <p>Password --> 7815</p>
+                                    <p> 
+                                        <br>
+                                        <img src="QR-Codes/M1Q3HomeScreenLock.png" alt="QR3">
+                                    </p>
+                                    <p class="bthover">&#128522; Scan Me &#128522; </p>
+                                </div>
+                            </span>
+                            <button onclick="togglepopup3()" style="margin-left: 10px; border: none; color: #FF9F0D; background-color: transparent;">
+                                <ion-icon class="QRHover"  name="qr-code-outline" style="font-size: 30px; background: transparent; cursor: pointer;"></ion-icon>
+                            </button>
+                        </span>
+                    </li>
+                    <!-- FOUR  Fast Foodie -->
+                    <li>
+                        <span style="font: 30px bold; margin-right: 100px; line-height: 4rem;">Fast-Foodie :</span>
+                        <span style="color: white; margin-left: 56px; font-size: 20px;">
+                            <a href="https://anshu-portfolio-project.on.drv.tw/projects/FastFoodie/" target="_blank" class="Visit">
+                                Visit
+                                 <ion-icon name="fast-food-outline" style="rotate: 30deg;"></ion-icon>
+                            </a>  
+                            <span class="popup" id="popup-4">
+                                <div class="overlay112233"></div>
+                                <div class="content112233">
+                                    <div class="close-btn" onclick="togglepopup4()">&times;</div>
+                                    <h1>Fast Foodie</h1>
+                                    <p>
+                                        <br>
+                                        <img src="QR-Codes/M1Q4FastFoodie.png" alt="QR4">
+                                    </p>
+                                    <p class="bthover">&#128522; Scan Me &#128522; </p>
+                                </div>
+                            </span>
+                            <button onclick="togglepopup4()" style="margin-left: 10px; border: none; color: #FF9F0D; background-color: transparent;">
+                                <ion-icon class="QRHover"  name="qr-code-outline" style="font-size: 30px; background: transparent; cursor: pointer;"></ion-icon>
+                            </button>
+                        </span>
+                    </li>
+                    <!-- FIVE  Fresh Meals -->
+                    <li>
+                        <span style="font: 30px bold; margin-right: 100px; line-height: 4rem;">Fresh Meal : </span>
+                        <span style="color: white; margin-left: 59px; font-size: 20px;">
+                            <a href="https://anshu-portfolio-project.on.drv.tw/projects/freshmeal-Resturant/" target="_blank" class="Visit">
+                                Visit
+                                 <ion-icon name="leaf-outline" style="rotate: 30deg;"></ion-icon>
+                            </a>  
+                            <span class="popup" id="popup-5">
+                                <div class="overlay112233"></div>
+                                <div class="content112233">
+                                    <div class="close-btn" onclick="togglepopup5()">&times;</div>
+                                    <h1>Fresh Meals</h1>
+                                    <p>
+                                        <br>
+                                        <img src="QR-Codes/M1Q5FreshMeal.png" alt="QR5">
+                                    </p>
+                                    <p class="bthover">&#128522; Scan Me &#128522; </p>
+                                </div>
+                            </span>
+                            <button onclick="togglepopup5()" style="margin-left: 10px; border: none; color: #FF9F0D; background-color: transparent;">
+                                <ion-icon class="QRHover"  name="qr-code-outline" style="font-size: 30px; background: transparent; cursor: pointer;"></ion-icon>
+                            </button>
+                        </span>
+                    </li>
+                    <!-- SIX Feel The Power -->
+                    <li>
+                        <span style="font: 30px bold; margin-right: 100px; line-height: 4rem;">Feel The Power : </span>
+                        <span style="color: white; margin-left: 5px; font-size: 20px;">
+                            <a href="https://anshu-portfolio-project.on.drv.tw/projects/Gym2.html" target="_blank" class="Visit">
+                                Visit
+                                 <ion-icon name="logo-web-component" style="rotate: 30deg;"></ion-icon>
+                            </a>  
+                            <span class="popup" id="popup-6">
+                                <div class="overlay112233"></div>
+                                <div class="content112233">
+                                    <div class="close-btn" onclick="togglepopup6()">&times;</div>
+                                    <h1>Feel The Power</h1>
+                                    <p>
+                                        <br>
+                                        <img src="QR-Codes/M1Q6FeelThePower.png" alt="QR6">
+                                    </p>
+                                    <p class="bthover">&#128522; Scan Me &#128522; </p>
+                                </div>
+                            </span>
+                            <button onclick="togglepopup6()" style="margin-left: 10px; border: none; color: #FF9F0D; background-color: transparent;">
+                                <ion-icon class="QRHover" name="qr-code-outline" style="font-size: 30px; background: transparent; cursor: pointer;"></ion-icon>
+                            </button>
+                        </span>
+                    </li>
+                    <!-- SEVEN  Rainy Restaurant -->
+                    <li>
+                        <span style="font: 30px bold; margin-right: 100px; line-height: 4rem;">Rainy Restaurants : </span>
+                        <span style="color: white; margin-left: -21px; font-size: 20px;">
+                            <a href="https://anshu-portfolio-project.on.drv.tw/projects/rainy-Resturant/" target="_blank" class="Visit">
+                                Visit
+                                 <ion-icon name="beer-outline" style="rotate: 30deg;"></ion-icon>
+                            </a>  
+                            <span class="popup" id="popup-7">
+                                <div class="overlay112233"></div>
+                                <div class="content112233">
+                                    <div class="close-btn" onclick="togglepopup7()">&times;</div>
+                                    <h1>Rainy Restaurant</h1>
+                                    <p>
+                                        <br>
+                                        <img src="QR-Codes/M1Q7-Rainy-Restaurant.png" alt="QR7">
+                                    </p>
+                                    <p class="bthover">&#128522; Scan Me &#128522; </p>
+                                </div>
+                            </span>
+                            <button onclick="togglepopup7()" style="margin-left: 10px; border: none; color: #FF9F0D; background-color: transparent;">
+                                <ion-icon class="QRHover" name="qr-code-outline" style="font-size: 30px; background: transparent; cursor: pointer;"></ion-icon>
+                            </button>
+                        </span>
+                    </li>
+                </span>
+
+
+                    <!-- .......................... -->
+
+
+
+
+
+                    
+
+                    <!-- .....Scroll 2.....  -->
+                       <!-- Gamezz  -->
+                       <h1 style="font-size: 50px;">Gamezz 
+                    
+                        <button onclick="myFunction1()" id="myBtn1" style="background: transparent; color: white; border: none; "><ion-icon style="font-size: 30px;" name="chevron-down-outline"></ion-icon></button>
+                    </h1>
+                    <span id="dots1"></span>
+                    <span id="more1">
+                        <!-- ONE Push-2-Play   -->
+                    <li>
+                        
+                        <span style="font: 30px bold; margin-right: 100px; line-height: 4rem;">Push-2-Play : </span>
+                        <span style="color: white; margin-left: 49px; font-size: 20px;">
+                            <a href="https://anshu-portfolio-project.on.drv.tw/projects/Gamezz/Push2Play/" target="_blank" class="Visit">
+                                Visit
+                                 <ion-icon name="push-outline" style="rotate: 180deg;"></ion-icon>
+                                 
+                            </a>  
+
+                            <span class="popup" id="popup-11">
+                                <div class="overlay112233"></div>
+                                <div class="content112233">
+                                    <div class="close-btn" onclick="togglepopup11()">&times;</div>
+                                    <h1>Push-2-Play</h1>
+                                    <p>
+                                        <br>
+                                        <img src="QR-Codes/M2Q1-Push2Play.png" alt="QR1">
+                                    </p>
+                                   
+                                    <p class="bthover">&#128522; Scan Me &#128522; </p>
+                                </div>
+                            </span>
+                        
+                            <button onclick="togglepopup11()" style="margin-left: 10px; border: none; color: #FF9F0D; background-color: transparent;">
+                                <ion-icon class="QRHover"  name="qr-code-outline" style="font-size: 30px; background: transparent; cursor: pointer;"></ion-icon>
+                            </button>
+
+
+
+                        </span>
+                    </li>
+                    <!-- TWO  Anshuza  -->
+                    <li>
+                        <span style="font: 30px bold; margin-right: 100px; line-height: 4rem;">Anshuza  :</span>
+                        <span style="color: white; margin-left: 94px; font-size: 20px;">
+                            <a href="https://code-village07.github.io/Anshuza/" target="_blank" class="Visit">
+                                Visit
+                                 <ion-icon name="pulse-outline" ></ion-icon>
+                            </a>  
+
+                            <span class="popup" id="popup-22">
+                                <div class="overlay112233"></div>
+                                <div class="content112233">
+                                    <div class="close-btn" onclick="togglepopup22()">&times;</div>
+                                    <h1>Anshuza</h1>
+                                    <p>
+                                        <br>
+                                        <img src="QR-Codes/M2Q2-Anshuza.png" alt="QR2">
+                                    </p>
+                                    <p class="bthover">&#128522; Scan Me &#128522; </p>
+                                </div>
+                            </span>
+                        
+                            <button onclick="togglepopup22()" style="margin-left: 10px; border: none; color: #FF9F0D; background-color: transparent;">
+                                <ion-icon class="QRHover"  name="qr-code-outline" style="font-size: 30px; background: transparent; cursor: pointer;"></ion-icon>
+                            </button>
+                        </span>
+                    </li>
+                    <!-- THREE  Planet War -->
+                    <li>
+                        <span style="font: 30px bold; margin-right: 100px; line-height: 4rem;">Planet War :</span>
+                        <span style="color: white; margin-left: 68px; font-size: 20px;">
+                            <a href="https://code-village07.github.io/Planet_war/" target="_blank" class="Visit">
+                                Visit
+                                <ion-icon name="logo-playstation"></ion-icon>
+                            </a>  
+                            <span class="popup" id="popup-33">
+                                <div class="overlay112233"></div>
+                                <div class="content112233">
+                                    <div class="close-btn" onclick="togglepopup33()">&times;</div>
+                                    <h1>Planet War</h1>
+                                   
+                                    <p> 
+                                        <br>
+                                        <img src="QR-Codes/M2Q3-PlanetWar.png" alt="QR3">
+                                    </p>
+                                    <p class="bthover">&#128522; Scan Me &#128522; </p>
+                                </div>
+                            </span>
+                            <button onclick="togglepopup33()" style="margin-left: 10px; border: none; color: #FF9F0D; background-color: transparent;">
+                                <ion-icon class="QRHover"  name="qr-code-outline" style="font-size: 30px; background: transparent; cursor: pointer;"></ion-icon>
+                            </button>
+                        </span>
+                    </li>
+                    <!-- FOUR  Zombie_shu  -->
+                    <li>
+                        <span style="font: 30px bold; margin-right: 100px; line-height: 4rem;">Zombie_shu  :</span>
+                        <span style="color: white; margin-left: 50px; font-size: 20px;">
+                            <a href="https://code-village07.github.io/Zombie_Anshu/" target="_blank" class="Visit">
+                                Visit
+                                <ion-icon name="nuclear-outline"></ion-icon>
+                            </a>  
+                            <span class="popup" id="popup-44">
+                                <div class="overlay112233"></div>
+                                <div class="content112233">
+                                    <div class="close-btn" onclick="togglepopup44()">&times;</div>
+                                    <h1>Zombie_shu</h1>
+                                    <p>
+                                        <br>
+                                        <img src="QR-Codes/M2Q4-ZombieAnshu.png" alt="QR4">
+                                    </p>
+                                    <p class="bthover">&#128522; Scan Me &#128522; </p>
+                                </div>
+                            </span>
+                            <button onclick="togglepopup44()" style="margin-left: 10px; border: none; color: #FF9F0D; background-color: transparent;">
+                                <ion-icon class="QRHover"  name="qr-code-outline" style="font-size: 30px; background: transparent; cursor: pointer;"></ion-icon>
+                            </button>
+                        </span>
+                    </li>
+                    <!-- FIVE  The_Cube  -->
+                    <li>
+                        <span style="font: 30px bold; margin-right: 100px; line-height: 4rem;">The_Cube : </span>
+                        <span style="color: white; margin-left: 68px; font-size: 20px;">
+                            <a href="https://code-village07.github.io/Anshu_Cude/" target="_blank" class="Visit">
+                                Visit
+                                <ion-icon name="cube-outline"></ion-icon>
+                            </a>  
+                            <span class="popup" id="popup-55">
+                                <div class="overlay112233"></div>
+                                <div class="content112233">
+                                    <div class="close-btn" onclick="togglepopup55()">&times;</div>
+                                    <h1>The_Cube </h1>
+                                    <p>
+                                        <br>
+                                        <img src="QR-Codes/M2Q5-TheCube.png" alt="QR5">
+                                    </p>
+                                    <p class="bthover">&#128522; Scan Me &#128522; </p>
+                                </div>
+                            </span>
+                            <button onclick="togglepopup55()" style="margin-left: 10px; border: none; color: #FF9F0D; background-color: transparent;">
+                                <ion-icon class="QRHover"  name="qr-code-outline" style="font-size: 30px; background: transparent; cursor: pointer;"></ion-icon>
+                            </button>
+                        </span>
+                    </li>
+                    <!-- SIX Hacking Game -->
+                    <li>
+                        <span style="font: 30px bold; margin-right: 100px; line-height: 4rem;">Hacking Game : </span>
+                        <span style="color: white; margin-left: 16px; font-size: 20px;">
+                            <a href="https://code-village07.github.io/Hacker_Game/" target="_blank" class="Visit">
+                                Visit
+                                <ion-icon name="bug-outline"></ion-icon>
+                            </a>  
+                            <span class="popup" id="popup-66">
+                                <div class="overlay112233"></div>
+                                <div class="content112233">
+                                    <div class="close-btn" onclick="togglepopup66()">&times;</div>
+                                    <h1>Hacking Game</h1>
+                                    <p>
+                                        <br>
+                                        <img src="QR-Codes/M2Q6-HackingGame.png" alt="QR6">
+                                    </p>
+                                    <p class="bthover">&#128522; Scan Me &#128522; </p>
+                                </div>
+                            </span>
+                            <button onclick="togglepopup66()" style="margin-left: 10px; border: none; color: #FF9F0D; background-color: transparent;">
+                                <ion-icon class="QRHover" name="qr-code-outline" style="font-size: 30px; background: transparent; cursor: pointer;"></ion-icon>
+                            </button>
+                        </span>
+                    </li>
+                    <!-- SEVEN  Tower Game -->
+                    <li>
+                        <span style="font: 30px bold; margin-right: 100px; line-height: 4rem;">Tower Games : </span>
+                        <span style="color: white; margin-left: 27px; font-size: 20px;">
+                            <a href="https://code-village07.github.io/Cube_Slider/" target="_blank" class="Visit">
+                                Visit
+                                <ion-icon name="podium-outline"></ion-icon>
+                            </a>  
+                            <span class="popup" id="popup-77">
+                                <div class="overlay112233"></div>
+                                <div class="content112233">
+                                    <div class="close-btn" onclick="togglepopup77()">&times;</div>
+                                    <h1>Tower Game</h1>
+                                    <p>
+                                        <br>
+                                        <img src="QR-Codes/M2Q7-Tower-Game.png" alt="QR7">
+                                    </p>
+                                    <p class="bthover">&#128522; Scan Me &#128522; </p>
+                                </div>
+                            </span>
+                            <button onclick="togglepopup77()" style="margin-left: 10px; border: none; color: #FF9F0D; background-color: transparent;">
+                                <ion-icon class="QRHover" name="qr-code-outline" style="font-size: 30px; background: transparent; cursor: pointer;"></ion-icon>
+                            </button>
+                        </span>
+                    </li>
+                </span>
+
+
+<!-- ---------------------------------------------------------------------------------------------------  -->
+
+
+                     <!-- .....Scroll 3.....  -->
+                       <!-- Creativitezz  -->
+                       <h1 style="font-size: 50px;">Creativitezz 
+                    
+                        <button onclick="myFunction2()" id="myBtn2" style="background: transparent; color: white; border: none; "><ion-icon style="font-size: 30px;" name="chevron-down-outline"></ion-icon></button>
+                    </h1>
+                    <span id="dots2"></span>
+                    <span id="more2">
+                        <!-- ONE Emoji2Photo  -->
+                    <li>
+                        
+                        <span style="font: 30px bold; margin-right: 100px; line-height: 4rem;">Emoji-2-Photo : </span>
+                        <span style="color: white; margin-left: 17px; font-size: 20px;">
+                            <a href="https://code-village07.github.io/Emojie_Maker/" target="_blank" class="Visit">
+                                Visit
+                                <ion-icon name="people-circle-outline"></ion-icon>
+                            </a>  
+
+                            <span class="popup" id="popup-111">
+                                <div class="overlay112233"></div>
+                                <div class="content112233">
+                                    <div class="close-btn" onclick="togglepopup111()">&times;</div>
+                                    <h1>Emoji2Photo</h1>
+                                    <p>
+                                        <br>
+                                        <img src="QR-Codes/M2Q1 Push2Play.png" alt="QR1">
+                                    </p>
+                                   
+                                    <p class="bthover">&#128522; Scan Me &#128522; </p>
+                                </div>
+                            </span>
+                        
+                            <button onclick="togglepopup111()" style="margin-left: 10px; border: none; color: #FF9F0D; background-color: transparent;">
+                                <ion-icon class="QRHover"  name="qr-code-outline" style="font-size: 30px; background: transparent; cursor: pointer;"></ion-icon>
+                            </button>
+
+
+
+                        </span>
+                    </li>
+                    <!-- TWO  Firework-Cracker  -->
+                    <li>
+                        <span style="font: 30px bold; margin-right: 100px; line-height: 4rem;">Firework-Cracker  :</span>
+                        <span style="color: white; margin-left: -13px; font-size: 20px;">
+                            <a href="https://code-village07.github.io/Firework_Simulator/" target="_blank" class="Visit">
+                                Visit
+                                <ion-icon name="sparkles-outline"></ion-icon>                            </a>  
+
+                            <span class="popup" id="popup-222">
+                                <div class="overlay112233"></div>
+                                <div class="content112233">
+                                    <div class="close-btn" onclick="togglepopup222()">&times;</div>
+                                    <h1>Firework-Cracker</h1>
+                                    <p>
+                                        <br>
+                                        <img src="QR-Codes/M3Q2FireworkCrackers.png" alt="QR2">
+                                    </p>
+                                    <p class="bthover">&#128522; Scan Me &#128522; </p>
+                                </div>
+                            </span>
+                        
+                            <button onclick="togglepopup222()" style="margin-left: 10px; border: none; color: #FF9F0D; background-color: transparent;">
+                                <ion-icon class="QRHover"  name="qr-code-outline" style="font-size: 30px; background: transparent; cursor: pointer;"></ion-icon>
+                            </button>
+                        </span>
+                    </li>
+                    <!-- THREE  Self_Destruct -->
+                    <li>
+                        <span style="font: 30px bold; margin-right: 100px; line-height: 4rem;">Self_Destruct :</span>
+                        <span style="color: white; margin-left: 35px; font-size: 20px;">
+                            <a href="https://code-village07.github.io/Self_Destruct/" target="_blank" class="Visit">
+                                Visit
+                                <ion-icon name="alert-outline"></ion-icon>                            </a>  
+                            <span class="popup" id="popup-333">
+                                <div class="overlay112233"></div>
+                                <div class="content112233">
+                                    <div class="close-btn" onclick="togglepopup333()">&times;</div>
+                                    <h1>Self_Destruct</h1>
+                                    <p> 
+                                        <br>
+                                        <img src="QR-Codes/M3Q4Self_destruct.png" alt="QR3">
+                                    </p>
+                                    <p class="bthover">&#128522; Scan Me &#128522; </p>
+                                </div>
+                            </span>
+                            <button onclick="togglepopup333()" style="margin-left: 10px; border: none; color: #FF9F0D; background-color: transparent;">
+                                <ion-icon class="QRHover"  name="qr-code-outline" style="font-size: 30px; background: transparent; cursor: pointer;"></ion-icon>
+                            </button>
+                        </span>
+                    </li>
+                    <!-- FOUR  Music_Paint -->
+                    <li>
+                        <span style="font: 30px bold; margin-right: 100px; line-height: 4rem;">Music_Paint :</span>
+                        <span style="color: white; margin-left: 49px; font-size: 20px;">
+                            <a href="https://code-village07.github.io/Music_Paint/" target="_blank" class="Visit">
+                                Visit
+                                <ion-icon name="musical-notes-outline"></ion-icon>                            </a>  
+                            <span class="popup" id="popup-444">
+                                <div class="overlay112233"></div>
+                                <div class="content112233">
+                                    <div class="close-btn" onclick="togglepopup444()">&times;</div>
+                                    <h1>Music_Paint</h1>
+                                    <p>
+                                        <br>
+                                        <img src="QR-Codes/M3Q7MusicPaint.png" alt="QR4">
+                                    </p>
+                                    <p class="bthover">&#128522; Scan Me &#128522; </p>
+                                </div>
+                            </span>
+                            <button onclick="togglepopup444()" style="margin-left: 10px; border: none; color: #FF9F0D; background-color: transparent;">
+                                <ion-icon class="QRHover"  name="qr-code-outline" style="font-size: 30px; background: transparent; cursor: pointer;"></ion-icon>
+                            </button>
+                        </span>
+                    </li>
+                    <!-- FIVE  Dancig_Effect -->
+                    <li>
+                        <span style="font: 30px bold; margin-right: 100px; line-height: 4rem;">Dancig_Effect: </span>
+                        <span style="color: white; margin-left: 31px; font-size: 20px;">
+                            <a href="https://code-village07.github.io/Dancig_markov_Effect/" target="_blank" class="Visit">
+                                Visit
+                                <ion-icon name="analytics-outline"></ion-icon>        
+                                                </a>  
+                            <span class="popup" id="popup-555">
+                                <div class="overlay112233"></div>
+                                <div class="content112233">
+                                    <div class="close-btn" onclick="togglepopup555()">&times;</div>
+                                    <h1>Dancig_Effect</h1>
+                                    <p>
+                                        <br>
+                                        <img src="QR-Codes/M3Q6DancingEffect.png" alt="QR5">
+                                    </p>
+                                    <p class="bthover">&#128522; Scan Me &#128522; </p>
+                                </div>
+                            </span>
+                            <button onclick="togglepopup555()" style="margin-left: 10px; border: none; color: #FF9F0D; background-color: transparent;">
+                                <ion-icon class="QRHover"  name="qr-code-outline" style="font-size: 30px; background: transparent; cursor: pointer;"></ion-icon>
+                            </button>
+                        </span>
+                    </li>
+                    <!-- SIX Hipnotize -->
+                    <li>
+                        <span style="font: 30px bold; margin-right: 100px; line-height: 4rem;">Hipnotize : </span>
+                        <span style="color: white; margin-left: 78px; font-size: 20px;">
+                            <a href="https://code-village07.github.io/Hipnotize_Audio_Visualization/" target="_blank" class="Visit">
+                                Visit
+                                <ion-icon name="at-circle-outline"></ion-icon>                            </a>  
+                            <span class="popup" id="popup-666">
+                                <div class="overlay112233"></div>
+                                <div class="content112233">
+                                    <div class="close-btn" onclick="togglepopup666()">&times;</div>
+                                    <h1>Hipnotize</h1>
+                                    <p>
+                                        <br>
+                                        <img src="QR-Codes/M3Q5Hipnotize.png" alt="QR6">
+                                    </p>
+                                    <p class="bthover">&#128522; Scan Me &#128522; </p>
+                                </div>
+                            </span>
+                            <button onclick="togglepopup666()" style="margin-left: 10px; border: none; color: #FF9F0D; background-color: transparent;">
+                                <ion-icon class="QRHover" name="qr-code-outline" style="font-size: 30px; background: transparent; cursor: pointer;"></ion-icon>
+                            </button>
+                        </span>
+                    </li>
+                    <!-- SEVEN  Piano -->
+                    <li>
+                        <span style="font: 30px bold; margin-right: 100px; line-height: 4rem;">Pianos : </span>
+                        <span style="color: white; margin-left: 115px; font-size: 20px;">
+                            <a href="https://code-village07.github.io/Key_Piano/" target="_blank" class="Visit">
+                                Visit
+                                <ion-icon name="pin-outline"></ion-icon>                            </a>  
+                            <span class="popup" id="popup-777">
+                                <div class="overlay112233"></div>
+                                <div class="content112233">
+                                    <div class="close-btn" onclick="togglepopup777()">&times;</div>
+                                    <h1>Piano</h1>
+                                    <p>
+                                        <br>
+                                        <img src="QR-Codes/M3Q3Piano.png" alt="QR7">
+                                    </p>
+                                    <p class="bthover">&#128522; Scan Me &#128522; </p>
+                                </div>
+                            </span>
+                            <button onclick="togglepopup777()" style="margin-left: 10px; border: none; color: #FF9F0D; background-color: transparent;">
+                                <ion-icon class="QRHover" name="qr-code-outline" style="font-size: 30px; background: transparent; cursor: pointer;"></ion-icon>
+                            </button>
+                        </span>
+                    </li>
+                </span>
+
+
+
+
+                            
+
+
+                   
+                   
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- JS External Script  -->
+        <!-- <script src="Assest/JS/jquery.js"></script> -->
+
+      
+
+        <!-- <script src="Assest/JS/text-type.js"></script> -->
+      
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+<!-- TOP DOWN ANIMATION LIKE Read-More option  -->
+<script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "<ion-icon name='chevron-down-outline' style='font-size : 30px;'>"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "<ion-icon name='chevron-up-outline' style='font-size:30px;'></ion-icon>"; 
+        moreText.style.display = "inline";
+      }
+    }
+
+
+
+    // Scroll 2 
+
+    function myFunction1() {
+      var dots1 = document.getElementById("dots1");
+      var moreText1 = document.getElementById("more1");
+      var btnText1 = document.getElementById("myBtn1");
+    
+      if (dots1.style.display === "none") {
+        dots1.style.display = "inline";
+        btnText1.innerHTML = "<ion-icon name='chevron-down-outline' style='font-size : 30px;'>"; 
+        moreText1.style.display = "none";
+      } else {
+        dots1.style.display = "none";
+        btnText1.innerHTML = "<ion-icon name='chevron-up-outline' style='font-size:30px;'></ion-icon>"; 
+        moreText1.style.display = "inline";
+      }
+    }
+
+
+    // Scroll 3
+
+    function myFunction2() {
+      var dots2 = document.getElementById("dots2");
+      var moreText2 = document.getElementById("more2");
+      var btnText2 = document.getElementById("myBtn2");
+    
+      if (dots2.style.display === "none") {
+        dots2.style.display = "inline";
+        btnText2.innerHTML = "<ion-icon name='chevron-down-outline' style='font-size : 30px;'>"; 
+        moreText2.style.display = "none";
+      } else {
+        dots2.style.display = "none";
+        btnText2.innerHTML = "<ion-icon name='chevron-up-outline' style='font-size:30px;'></ion-icon>"; 
+        moreText2.style.display = "inline";
+      }
+    }
+
+    
+    
+    </script>
+    
+
+
+ 
+</body>
+</html>
